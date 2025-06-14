@@ -8,11 +8,18 @@ const PORT = process.env.PORT || 3000;
 const cors = require('cors');
 
 app.use(cors({
-  origin: true, // 或 ['https://你的vercel域名.vercel.app', 'http://localhost:4200']
+  origin: function (origin, callback) {
+    // 允许本地开发
+    if (origin === 'http://localhost:4200') return callback(null, true);
+    // 允许 vercel.app 的所有临时域名（preview/production 都可）
+    if (/^https:\/\/[\w-]+(-[\w-]+)*\.vercel\.app$/.test(origin)) return callback(null, true);
+    callback(new Error('Not allowed by CORS'));
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 
 app.use(express.json());
@@ -20,8 +27,14 @@ app.use(session({
   secret: 'your-session-secret',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false, httpOnly: true, maxAge: 24 * 60 * 60 * 1000 }
+  cookie: {
+    secure: process.env.NODE_ENV === 'production', // 生产环境 true，本地开发 false
+    httpOnly: true,
+    sameSite: 'none', // 必须是 'none'，这样跨域 session 才能存下
+    maxAge: 24 * 60 * 60 * 1000
+  }
 }));
+
 
 // 认证中间件：优先session，其次basic
 const authenticate = (req, res, next) => {
