@@ -4,11 +4,6 @@ const path = require('path');
 const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-
-
-const express = require('express');
-const session = require('express-session');
 const cors = require('cors');
 
 
@@ -33,12 +28,13 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: true,
+    secure: false,
     httpOnly: true,
     sameSite: 'none',
     maxAge: 24 * 60 * 60 * 1000
   }
 }));
+
 
 
 
