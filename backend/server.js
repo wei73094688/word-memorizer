@@ -5,14 +5,15 @@ const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// 允许跨域，方便前端本地开发联调
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
-  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  next();
-});
+const cors = require('cors');
+
+app.use(cors({
+  origin: true, // 或 ['https://你的vercel域名.vercel.app', 'http://localhost:4200']
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 
 app.use(express.json());
 app.use(session({
