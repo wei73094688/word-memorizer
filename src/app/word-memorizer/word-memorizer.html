@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="header">
+    <div class="site-title"><span class="wd">wd</span> <span class="dash">-</span> <span class="mem">Word Memorizer</span></div>
+    <div class="user-info">
+      <span class="username">{{ username }}</span>
+      <button class="logout-btn" (click)="onLogout()">登出</button>
+    </div>
+  </div>
+  <button class="list-btn" routerLink="/wei/words">词库一览</button>
+  <div id="word-box">
+    <div id="word">
+      {{ currentWord.word }}
+      <span *ngIf="currentWord.phonetic" class="phonetic">{{ currentWord.phonetic }}</span>
+      <button class="speak-btn" (click)="speak()">🔊</button>
+    </div>
+    <button id="show-meaning" (click)="onShowMeaning()" *ngIf="!showMeaning">显示释义</button>
+    <div id="meaning" *ngIf="showMeaning">{{ currentWord.meaning }}</div>
+  </div>
+  <div class="actions">
+    <button id="next-word" (click)="onNextWord()">下一个单词</button>
+  </div>
+</div>

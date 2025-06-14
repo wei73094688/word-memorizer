@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "word": "abandon",
+    "meaning": "放弃"
+  },
+  {
+    "id": 2,
+    "word": "acquire",
+    "meaning": "获得"
+  },
+  {
+    "id": 3,
+    "word": "adequate",
+    "meaning": "足够的"
+  },
+  {
+    "id": 4,
+    "word": "adjacent",
+    "meaning": "邻近的"
+  },
+  {
+    "id": 5,
+    "word": "advocate",
+    "meaning": "提倡者/提倡"
+  },
+  {
+    "id": 6,
+    "word": "allocate",
+    "meaning": "分配"
+  },
+  {
+    "id": 7,
+    "word": "apparent",
+    "meaning": "明显的"
+  },
+  {
+    "id": 8,
+    "word": "appreciate",
+    "meaning": "感激/欣赏"
+  },
+  {
+    "id": 9,
+    "word": "approach",
+    "meaning": "方法/接近"
+  },
+  {
+    "id": 10,
+    "word": "assess",
+    "meaning": "评估"
+  },
+  {
+    "id": 11,
+    "word": "assign",
+    "meaning": "分配/指派"
+  },
+  {
+    "id": 12,
+    "word": "assume",
+    "meaning": "假设/承担"
+  },
+  {
+    "id": 13,
+    "word": "attain",
+    "meaning": "达到/获得"
+  },
+  {
+    "id": 14,
+    "word": "attribute",
+    "meaning": "属性/归因于"
+  },
+  {
+    "id": 15,
+    "word": "benefit",
+    "meaning": "益处/有益于"
+  },
+  {
+    "id": 16,
+    "word": "capable",
+    "meaning": "有能力的"
+  },
+  {
+    "id": 17,
+    "word": "cease",
+    "meaning": "停止"
+  },
+  {
+    "id": 18,
+    "word": "challenge",
+    "meaning": "挑战"
+  },
+  {
+    "id": 19,
+    "word": "circumstance",
+    "meaning": "环境/情况"
+  },
+  {
+    "id": 20,
+    "word": "cite",
+    "meaning": "引用/举例"
+  },
+  {
+    "id": 21,
+    "word": "clarify",
+    "meaning": "澄清"
+  },
+  {
+    "id": 22,
+    "word": "collapse",
+    "meaning": "倒塌/崩溃"
+  },
+  {
+    "id": 23,
+    "word": "commence",
+    "meaning": "开始"
+  },
+  {
+    "id": 24,
+    "word": "commit",
+    "meaning": "承诺/犯罪"
+  },
+  {
+    "id": 25,
+    "word": "communicate",
+    "meaning": "交流/沟通"
+  },
+  {
+    "id": 26,
+    "word": "compensate",
+    "meaning": "补偿"
+  },
+  {
+    "id": 27,
+    "word": "compile",
+    "meaning": "编译/汇编"
+  },
+  {
+    "id": 28,
+    "word": "complement",
+    "meaning": "补充/补足物"
+  },
+  {
+    "id": 29,
+    "word": "comprehensive",
+    "meaning": "全面的"
+  },
+  {
+    "id": 30,
+    "word": "conceive",
+    "meaning": "构思/怀孕"
+  },
+  {
+    "id": 31,
+    "word": "conclude",
+    "meaning": "得出结论/结束"
+  },
+  {
+    "id": 32,
+    "word": "concurrent",
+    "meaning": "同时发生的"
+  },
+  {
+    "id": 33,
+    "word": "conduct",
+    "meaning": "进行/行为"
+  },
+  {
+    "id": 34,
+    "word": "confine",
+    "meaning": "限制/禁闭"
+  },
+  {
+    "id": 35,
+    "word": "confirm",
+    "meaning": "确认"
+  },
+  {
+    "id": 36,
+    "word": "conform",
+    "meaning": "遵守/符合"
+  },
+  {
+    "id": 37,
+    "word": "consent",
+    "meaning": "同意/许可"
+  },
+  {
+    "id": 38,
+    "word": "consequent",
+    "meaning": "作为结果的"
+  },
+  {
+    "id": 39,
+    "word": "considerable",
+    "meaning": "相当大的"
+  },
+  {
+    "id": 40,
+    "word": "constant",
+    "meaning": "持续的/恒定的"
+  },
+  {
+    "id": 41,
+    "word": "constitute",
+    "meaning": "构成/组成"
+  },
+  {
+    "id": 42,
+    "word": "constrain",
+    "meaning": "限制/约束"
+  },
+  {
+    "id": 43,
+    "word": "construct",
+    "meaning": "建造/构造"
+  },
+  {
+    "id": 44,
+    "word": "consult",
+    "meaning": "咨询/请教"
+  },
+  {
+    "id": 45,
+    "word": "consume",
+    "meaning": "消耗/消费"
+  }
+]

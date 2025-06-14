@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "word": "abandon",
+    "phonetic": "[əˈbændən]",
+    "meaning": "放弃",
+    "example": "He abandoned his car in the snow."
+  },
+  {
+    "id": 2,
+    "word": "acquire",
+    "phonetic": "[əˈkwaɪə]",
+    "meaning": "获得",
+    "example": "She acquired a new language quickly."
+  },
+  {
+    "id": 3,
+    "word": "adequate",
+    "phonetic": "[ˈædɪkwət]",
+    "meaning": "足够的",
+    "example": "The food was more than adequate for the six of us."
+  },
+  {
+    "id": 4,
+    "word": "adjacent",
+    "phonetic": "[əˈdʒeɪsənt]",
+    "meaning": "邻近的",
+    "example": "The two rooms are adjacent to each other."
+  },
+  {
+    "id": 5,
+    "word": "advocate",
+    "phonetic": "[ˈædvəkeɪt]",
+    "meaning": "提倡者/提倡",
+    "example": "He is an advocate of free trade."
+  },
+  {
+    "id": 6,
+    "word": "allocate",
+    "phonetic": "[ˈæləkeɪt]",
+    "meaning": "分配",
+    "example": "They allocated a separate desk to each student."
+  },
+  {
+    "id": 7,
+    "word": "apparent",
+    "phonetic": "[əˈpærənt]",
+    "meaning": "明显的",
+    "example": "It was apparent that he was tired."
+  },
+  {
+    "id": 8,
+    "word": "appreciate",
+    "phonetic": "[əˈpriːʃieɪt]",
+    "meaning": "感激/欣赏",
+    "example": "I appreciate your help very much."
+  },
+  {
+    "id": 9,
+    "word": "approach",
+    "phonetic": "[əˈprəʊtʃ]",
+    "meaning": "方法/接近",
+    "example": "We need a whole new approach to the job."
+  },
+  {
+    "id": 10,
+    "word": "assess",
+    "phonetic": "[əˈses]",
+    "meaning": "评估",
+    "example": "The tests are designed to assess a child's reading skills."
+  },
+  {
+    "id": 11,
+    "word": "assign",
+    "phonetic": "[əˈsaɪn]",
+    "meaning": "分配/指派",
+    "example": "The teacher assigned a different task to each student."
+  },
+  {
+    "id": 12,
+    "word": "assume",
+    "phonetic": "[əˈsjuːm]",
+    "meaning": "假设/承担",
+    "example": "I assumed he was coming, so I was surprised when he didn't show up."
+  },
+  {
+    "id": 13,
+    "word": "attain",
+    "phonetic": "[əˈteɪn]",
+    "meaning": "达到/获得",
+    "example": "He attained the position of manager after many years."
+  },
+  {
+    "id": 14,
+    "word": "attribute",
+    "phonetic": "[əˈtrɪbjuːt]",
+    "meaning": "属性/归因于",
+    "example": "She attributes her success to hard work."
+  },
+  {
+    "id": 15,
+    "word": "benefit",
+    "phonetic": "[ˈbenɪfɪt]",
+    "meaning": "益处/有益于",
+    "example": "Regular exercise has many health benefits."
+  },
+  {
+    "id": 16,
+    "word": "capable",
+    "phonetic": "[ˈkeɪpəbl]",
+    "meaning": "有能力的",
+    "example": "She is capable of doing the job well."
+  },
+  {
+    "id": 17,
+    "word": "cease",
+    "phonetic": "[siːs]",
+    "meaning": "停止",
+    "example": "The company ceased operations last year."
+  },
+  {
+    "id": 18,
+    "word": "challenge",
+    "phonetic": "[ˈtʃælɪndʒ]",
+    "meaning": "挑战",
+    "example": "Climbing the mountain was a real challenge."
+  },
+  {
+    "id": 19,
+    "word": "circumstance",
+    "phonetic": "[ˈsɜːkəmstəns]",
+    "meaning": "环境/情况",
+    "example": "He was a victim of circumstance."
+  },
+  {
+    "id": 20,
+    "word": "cite",
+    "phonetic": "[saɪt]",
+    "meaning": "引用/举例",
+    "example": "She cited several reasons for leaving the company."
+  },
+  {
+    "id": 21,
+    "word": "clarify",
+    "phonetic": "[ˈklærɪfaɪ]",
+    "meaning": "澄清",
+    "example": "Could you clarify your last statement?"
+  },
+  {
+    "id": 22,
+    "word": "collapse",
+    "phonetic": "[kəˈlæps]",
+    "meaning": "倒塌/崩溃",
+    "example": "The building collapsed after the earthquake."
+  },
+  {
+    "id": 23,
+    "word": "commence",
+    "phonetic": "[kəˈmens]",
+    "meaning": "开始",
+    "example": "The ceremony will commence at noon."
+  },
+  {
+    "id": 24,
+    "word": "commit",
+    "phonetic": "[kəˈmɪt]",
+    "meaning": "承诺/犯罪",
+    "example": "He committed a serious crime."
+  },
+  {
+    "id": 25,
+    "word": "communicate",
+    "phonetic": "[kəˈmjuːnɪkeɪt]",
+    "meaning": "交流/沟通",
+    "example": "We communicate by email."
+  },
+  {
+    "id": 26,
+    "word": "compensate",
+    "phonetic": "[ˈkɒmpenseɪt]",
+    "meaning": "补偿",
+    "example": "The company compensated him for his injury."
+  },
+  {
+    "id": 27,
+    "word": "compile",
+    "phonetic": "[kəmˈpaɪl]",
+    "meaning": "编译/汇编",
+    "example": "She compiled a list of names."
+  },
+  {
+    "id": 28,
+    "word": "complement",
+    "phonetic": "[ˈkɒmplɪment]",
+    "meaning": "补充/补足物",
+    "example": "The scarf complements her outfit."
+  },
+  {
+    "id": 29,
+    "word": "comprehensive",
+    "phonetic": "[ˌkɒmprɪˈhensɪv]",
+    "meaning": "全面的",
+    "example": "She has a comprehensive knowledge of the subject."
+  },
+  {
+    "id": 30,
+    "word": "conceive",
+    "phonetic": "[kənˈsiːv]",
+    "meaning": "构思/怀孕",
+    "example": "She conceived the idea for the book while on vacation."
+  },
+  {
+    "id": 31,
+    "word": "conclude",
+    "phonetic": "[kənˈkluːd]",
+    "meaning": "得出结论/结束",
+    "example": "He concluded that the plan would not work."
+  },
+  {
+    "id": 32,
+    "word": "concurrent",
+    "phonetic": "[kənˈkʌrənt]",
+    "meaning": "同时发生的",
+    "example": "The two events are concurrent."
+  },
+  {
+    "id": 33,
+    "word": "conduct",
+    "phonetic": "[kənˈdʌkt]",
+    "meaning": "进行/行为",
+    "example": "They conducted a survey."
+  },
+  {
+    "id": 34,
+    "word": "confine",
+    "phonetic": "[kənˈfaɪn]",
+    "meaning": "限制/禁闭",
+    "example": "He was confined to bed by illness."
+  },
+  {
+    "id": 35,
+    "word": "confirm",
+    "phonetic": "[kənˈfɜːm]",
+    "meaning": "确认",
+    "example": "Please confirm your attendance."
+  },
+  {
+    "id": 36,
+    "word": "conform",
+    "phonetic": "[kənˈfɔːm]",
+    "meaning": "遵守/符合",
+    "example": "You must conform to the rules."
+  },
+  {
+    "id": 37,
+    "word": "consent",
+    "phonetic": "[kənˈsent]",
+    "meaning": "同意/许可",
+    "example": "He gave his consent to the plan."
+  },
+  {
+    "id": 38,
+    "word": "consequent",
+    "phonetic": "[ˈkɒnsɪkwənt]",
+    "meaning": "作为结果的",
+    "example": "The drought and consequent famine struck the region."
+  },
+  {
+    "id": 39,
+    "word": "considerable",
+    "phonetic": "[kənˈsɪdərəbl]",
+    "meaning": "相当大的",
+    "example": "The fire caused considerable damage."
+  },
+  {
+    "id": 40,
+    "word": "constant",
+    "phonetic": "[ˈkɒnstənt]",
+    "meaning": "持续的/恒定的",
+    "example": "She was in constant pain."
+  },
+  {
+    "id": 41,
+    "word": "constitute",
+    "phonetic": "[ˈkɒnstɪtjuːt]",
+    "meaning": "构成/组成",
+    "example": "Women constitute 70% of the student population."
+  },
+  {
+    "id": 42,
+    "word": "constrain",
+    "phonetic": "[kənˈstreɪn]",
+    "meaning": "限制/约束",
+    "example": "Financial factors should not constrain doctors from prescribing the best treatment."
+  },
+  {
+    "id": 43,
+    "word": "construct",
+    "phonetic": "[kənˈstrʌkt]",
+    "meaning": "建造/构造",
+    "example": "They constructed a shelter out of branches."
+  },
+  {
+    "id": 44,
+    "word": "consult",
+    "phonetic": "[kənˈsʌlt]",
+    "meaning": "咨询/请教",
+    "example": "You should consult a doctor."
+  },
+  {
+    "id": 45,
+    "word": "consume",
+    "phonetic": "[kənˈsjuːm]",
+    "meaning": "消耗/消费",
+    "example": "He consumes huge amounts of bread with every meal."
+  }
+]
