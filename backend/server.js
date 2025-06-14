@@ -7,11 +7,25 @@ const PORT = process.env.PORT || 3000;
 
 const cors = require('cors');
 
-app.use(cors({
-  origin: 'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
-}));
+const allowlist = [
+  'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
+  'https://word-memorizer-9w5n-243w064bc-wei-weis-projects-4ca6bf47.vercel.app',
+  // 以后有新域名直接加进来
+];
+
+const corsOptionsDelegate = function (req, callback) {
+  let corsOptions;
+  if (allowlist.indexOf(req.header('Origin')) !== -1) {
+    corsOptions = { origin: true, credentials: true, methods: ['GET','POST','PUT','DELETE','OPTIONS'] };
+  } else {
+    corsOptions = { origin: false };
+  }
+  callback(null, corsOptions);
+};
+
+app.use(cors(corsOptionsDelegate));
+
+app.options('*', cors(corsOptionsDelegate));
 
 app.use((req, res, next) => {
   console.log('实际请求Origin:', req.headers.origin);
