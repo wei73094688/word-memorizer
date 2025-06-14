@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const cors = require('cors');
 
 app.use(cors({
-  origin: true, // 或 ['https://你的vercel域名.vercel.app', 'http://localhost:4200']
+  origin: 'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -20,7 +20,12 @@ app.use(session({
   secret: 'your-session-secret',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false, httpOnly: true, maxAge: 24 * 60 * 60 * 1000 }
+cookie: {
+  secure: true, // 必须为 true，跨域时只有 https + secure 才能带 cookie
+  httpOnly: true,
+  maxAge: 24 * 60 * 60 * 1000,
+  sameSite: 'none' // 关键，允许跨域
+}
 }));
 
 // 认证中间件：优先session，其次basic
