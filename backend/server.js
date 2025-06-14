@@ -10,9 +10,13 @@ const cors = require('cors');
 app.use(cors({
   origin: 'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
+
+app.use((req, res, next) => {
+  console.log('实际请求Origin:', req.headers.origin);
+  next();
+});
 
 
 app.use(express.json());
@@ -161,3 +165,10 @@ app.post('/api/words', authenticate, requireRole('admin'), (req, res) => {
 app.listen(PORT, () => {
   console.log(`服务器运行在 http://localhost:${PORT}`);
 });
+
+app.options('*', cors({
+  origin: 'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
+  credentials: true
+}));
+
+
