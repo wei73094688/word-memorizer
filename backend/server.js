@@ -180,9 +180,6 @@ app.listen(PORT, () => {
   console.log(`服务器运行在 http://localhost:${PORT}`);
 });
 
-app.options('*', cors({
-  origin: 'https://word-memorizer-9w5n-2nuc4o2oi-wei-weis-projects-4ca6bf47.vercel.app',
-  credentials: true
-}));
+
 
 
