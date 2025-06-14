@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ChangeDetectorRef } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-word-detail',
@@ -32,7 +33,7 @@ export class WordDetailComponent {
     private authService: AuthService
   ) {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.http.get<any>(`/api/words/${id}`, {
+    this.http.get<any>(`${environment.apiUrl}/api/words/${id}`, {
       withCredentials: true
     }).subscribe({
       next: res => {

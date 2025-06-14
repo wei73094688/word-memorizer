@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthService } from '../services/auth.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-word-list',
@@ -86,7 +87,7 @@ export class WordListComponent {
 
   fetchWords() {
     this.http.get<any>(
-      `/api/words?page=${this.currentPage}&pageSize=${this.pageSize}`,
+      `${environment.apiUrl}/api/words?page=${this.currentPage}&pageSize=${this.pageSize}`,
       { withCredentials: true }
     ).subscribe(res => {
       this.words = res.data;
@@ -149,7 +150,7 @@ export class WordListComponent {
     this.formWord = { word: '', phonetic: '', meaning: '', example: '' };
   }
   onSubmit() {
-    this.http.post('/api/words', this.formWord, { withCredentials: true }).subscribe(() => {
+    this.http.post(`${environment.apiUrl}/api/words`, this.formWord, { withCredentials: true }).subscribe(() => {
       this.fetchWords();
       this.closeDialog();
     });
@@ -157,7 +158,7 @@ export class WordListComponent {
   deleteWord(id: number, event: Event) {
     event.stopPropagation();
     if (confirm('确定要删除吗？')) {
-      this.http.delete(`/api/words/${id}`, { withCredentials: true }).subscribe(() => {
+      this.http.delete(`${environment.apiUrl}/api/words/${id}`, { withCredentials: true }).subscribe(() => {
         this.fetchWords();
       });
     }

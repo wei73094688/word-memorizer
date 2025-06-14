@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthService } from '../services/auth.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-word-memorizer',
@@ -29,7 +30,7 @@ export class WordMemorizer {
   }
 
   fetchWords() {
-    this.http.get<any>('/api/words?page=1&pageSize=1000', {
+    this.http.get<any>(`${environment.apiUrl}/api/words?page=1&pageSize=1000`, {
       withCredentials: true
     }).subscribe(res => {
       this.words = res.data;
@@ -67,7 +68,7 @@ export class WordMemorizer {
   }
 
   onLogout() {
-    this.http.post('/api/logout', {}, { withCredentials: true }).subscribe(() => {
+    this.http.post(`${environment.apiUrl}/api/logout`, {}, { withCredentials: true }).subscribe(() => {
       this.authService.logout();
     });
   }
