@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthService } from '../services/auth.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -25,7 +26,7 @@ export class LoginComponent {
 
   onLogin() {
     const credentials = btoa(`${this.username}:${this.password}`);
-    this.http.post<any>('/api/login', {}, {
+    this.http.post<any>(`${environment.apiUrl}/api/login`, {}, {
       headers: { 'Authorization': `Basic ${credentials}` },
       withCredentials: true
     }).subscribe({
