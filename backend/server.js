@@ -9,21 +9,28 @@ const cors = require('cors');
 
 app.use(cors({
   origin: function (origin, callback) {
-    console.log('CORS origin:', origin); // 打印出来
-    if (!origin) return callback(null, true); // 允许本地curl/postman
-    // 允许本地开发
-    if (origin === 'http://localhost:4200') return callback(null, true);
-    // 允许所有 vercel.app
-    if (/^https:\/\/[\w.-]+\.vercel\.app$/.test(origin)) return callback(null, true);
-    // 如果你的前端其实是render.com等自定义域名，也补充一下
-    // if (/^https:\/\/your-custom-domain\.com$/.test(origin)) return callback(null, true);
+    console.log('CORS origin:', origin);
 
-    callback(new Error('Not allowed by CORS'));
+    // 允许无 origin 的请求（如curl、postman等）
+    if (!origin) return callback(null, true);
+
+    // 本地开发
+    if (origin === 'http://localhost:4200') return callback(null, true);
+
+    // 匹配所有 vercel.app 子域名
+    if (/^https:\/\/[\w-]+(\.[\w-]+)*\.vercel\.app$/.test(origin)) return callback(null, true);
+
+    // 如果有自定义生产域名，在这里加
+    // if (origin === 'https://your-custom-domain.com') return callback(null, true);
+
+    // 其他不允许
+    return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 
 
