@@ -5,25 +5,20 @@ const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+
+const express = require('express');
+const session = require('express-session');
 const cors = require('cors');
+
+
+app.set('trust proxy', 1); // cloud 环境 session 跨域必加
 
 app.use(cors({
   origin: function (origin, callback) {
-    console.log('CORS origin:', origin);
-
-    // 允许无 origin 的请求（如curl、postman等）
     if (!origin) return callback(null, true);
-
-    // 本地开发
     if (origin === 'http://localhost:4200') return callback(null, true);
-
-    // 匹配所有 vercel.app 子域名
     if (/^https:\/\/[\w-]+(\.[\w-]+)*\.vercel\.app$/.test(origin)) return callback(null, true);
-
-    // 如果有自定义生产域名，在这里加
-    // if (origin === 'https://your-custom-domain.com') return callback(null, true);
-
-    // 其他不允许
     return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
@@ -31,22 +26,22 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-
-
-
-
 app.use(express.json());
+
 app.use(session({
   secret: 'your-session-secret',
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: true, // 生产环境 true，本地开发 false
+    secure: true,
     httpOnly: true,
-    sameSite: 'none', // 必须是 'none'，这样跨域 session 才能存下
+    sameSite: 'none',
     maxAge: 24 * 60 * 60 * 1000
   }
 }));
+
+
+
 
 
 // 认证中间件：优先session，其次basic
