@@ -41,7 +41,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: process.env.NODE_ENV === 'production', // 生产环境 true，本地开发 false
+    secure: true, // 生产环境 true，本地开发 false
     httpOnly: true,
     sameSite: 'none', // 必须是 'none'，这样跨域 session 才能存下
     maxAge: 24 * 60 * 60 * 1000
